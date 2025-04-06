@@ -5,7 +5,7 @@ const app = express();
 const path = require("path");
 const bodyParser = require("body-parser");
 const { Server } = require('socket.io');
-const config = JSON.parse(fs.readFileSync(path.join(process.cwd(), "config.json")));
+const config = JSON.parse(fs.readFileSync(path.join(process.cwd(), "conf.json")));
 let users = [];
 
 app.use(bodyParser.json());

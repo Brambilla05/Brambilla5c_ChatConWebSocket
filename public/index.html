@@ -1,11 +1,31 @@
-<body>    
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat con WebSocket</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
     <div class="container">
-      <ul id="chat" class="list-group">
-      </ul>
+        <h1>Chat con WebSocket</h1>
+        
+        <div id="usernameModal" style="display: block;">
+            <h2>Inserisci il tuo nome</h2>
+            <input id="usernameInput" type="text" placeholder="Nome utente" />
+            <button id="usernameButton">Entra</button>
+        </div>
+
+        <ul id="chat" class="list-group"></ul>
+        <div class="row mt-4">
+            <input id="input" class="form-control" placeholder="Scrivi un messaggio..." />
+            <button id="sendButton" type="button" class="btn btn-success">Invia</button>
+        </div>
+        
+        <h2>Utenti connessi</h2>
+        <ul id="userList" class="list-group"></ul>
     </div>
-    <div class="row mt-4">
-      <input id="input" class="form-control" />
-      <button id="sendButton" type="button" class="btn btn-success">Send</button>
-    </div>    
-    <script type="application/javascript" src="index.js"></script>
-  </body>
+
+    <script type="module" src="/src/index.js"></script>
+</body>
+</html>
