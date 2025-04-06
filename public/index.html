@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Chat con WebSocket</h1>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Chat con WebSocket</h1>
         
-        <div id="usernameModal" style="display: block;">
+        <div id="usernameModal" class="text-center mb-4">
             <h2>Inserisci il tuo nome</h2>
-            <input id="usernameInput" type="text" placeholder="Nome utente" />
-            <button id="usernameButton">Entra</button>
+            <input id="usernameInput" type="text" class="form-control mb-2" placeholder="Nome utente" />
+            <button id="usernameButton" class="btn btn-primary">Entra</button>
         </div>
 
-        <ul id="chat" class="list-group"></ul>
-        <div class="row mt-4">
+        <ul id="chat" class="list-group mb-4"></ul>
+        
+        <div class="input-group mb-3">
             <input id="input" class="form-control" placeholder="Scrivi un messaggio..." />
-            <button id="sendButton" type="button" class="btn btn-success">Invia</button>
+            <div class="input-group-append">
+                <button id="sendButton" type="button" class="btn btn-success">Invia</button>
+            </div>
         </div>
         
         <h2>Utenti connessi</h2>
